@@ -36,8 +36,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <div  onClick={() => handleNavigation("/")} 
-           className="flex-shrink-0 flex items-center space-x-2 cursor-pointer">
+          <div onClick={() => handleNavigation("/")}
+            className="flex-shrink-0 flex items-center space-x-2 cursor-pointer">
             <img src="/assets/2 2025.png" alt="logo" className="h-12 w-auto" />
           </div>
 
@@ -99,7 +99,6 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-
             {/* Skills Training Dropdown */}
             <div className="relative">
               <button
@@ -109,22 +108,28 @@ export default function Navbar() {
                 Skills Training <ChevronDown size={16} className="ml-1" />
               </button>
               {openDropdown === "skills" && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2">
-                  <div
-                    onClick={() => handleNavigation("/bootcamps")}
-                    className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer"
-                  >
-                    Bootcamps
-                  </div>
-                  <div
-                    onClick={() => handleNavigation("/workshops")}
-                    className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer"
-                  >
-                    Workshops
-                  </div>
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md py-2">
+                  {[
+                    ["Artificial Intelligence Skills", "/artificial-intelligence-skills"],
+                    ["Software Programming", "/software-programming"],
+                    ["Networking Skills", "/networking-skills"],
+                    ["Cybersecurity Skills", "/cybersecurity-skills"],
+                    ["Semiconductor Chip Design Skills", "/semiconductor-chips-design-skills"],
+                    ["Foundational Training", "/foundational-training"],
+                  ].map(([label, path]) => (
+                    <div
+                      key={path}
+                      onClick={() => handleNavigation(path)}
+                      className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer"
+                    >
+                      {label}
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
+
+
 
             {/* Courses */}
             <div
@@ -209,6 +214,8 @@ export default function Navbar() {
             </div>
           )}
 
+
+
           <button
             onClick={() => toggleDropdown("skills")}
             className="w-full text-left flex items-center justify-between py-2 text-black"
@@ -217,20 +224,26 @@ export default function Navbar() {
           </button>
           {openDropdown === "skills" && (
             <div className="pl-4 space-y-2">
-              <div
-                onClick={() => handleNavigation("/bootcamps")}
-                className="block text-black cursor-pointer hover:underline"
-              >
-                Bootcamps
-              </div>
-              <div
-                onClick={() => handleNavigation("/workshops")}
-                className="block text-black cursor-pointer hover:underline"
-              >
-                Workshops
-              </div>
+              {[
+                ["Artificial Intelligence Skills", "/artificial-intelligence-skills"],
+                ["Software Programming", "/software-programming"],
+                ["Networking Skills", "/networking-skills"],
+                ["Cybersecurity Skills", "/cybersecurity-skills"],
+                ["Semiconductor Chip Design Skills", "/semiconductor-chips-design-skills"],
+                ["Foundational Training", "/foundational-training"],
+              ].map(([label, path]) => (
+                <div
+                  key={path}
+                  onClick={() => handleNavigation(path)}
+                  className="block text-black cursor-pointer hover:underline"
+                >
+                  {label}
+                </div>
+              ))}
             </div>
           )}
+
+
 
           <div
             onClick={() => handleNavigation("/course")}
