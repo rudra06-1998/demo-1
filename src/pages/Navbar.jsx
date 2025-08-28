@@ -36,8 +36,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center space-x-2">
-            <img src="/assets/2 2025.png" alt="logo" className="h-10 w-auto" />
+          <div  onClick={() => handleNavigation("/")} 
+           className="flex-shrink-0 flex items-center space-x-2 cursor-pointer">
+            <img src="/assets/2 2025.png" alt="logo" className="h-12 w-auto" />
           </div>
 
           {/* Desktop Menu */}
