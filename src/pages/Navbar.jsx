@@ -115,7 +115,7 @@ export default function Navbar() {
                     ["Networking Skills", "/networking-skills"],
                     ["Cybersecurity Skills", "/cybersecurity-skills"],
                     ["Semiconductor Chip Design Skills", "/semiconductor-chips-design-skills"],
-                    ["Foundational Training", "/foundational-training"],
+                    ["Foundational Training Programs", "/foundational-training-program"],
                   ].map(([label, path]) => (
                     <div
                       key={path}
@@ -230,7 +230,7 @@ export default function Navbar() {
                 ["Networking Skills", "/networking-skills"],
                 ["Cybersecurity Skills", "/cybersecurity-skills"],
                 ["Semiconductor Chip Design Skills", "/semiconductor-chips-design-skills"],
-                ["Foundational Training", "/foundational-training"],
+                ["Foundational Training Programs", "/foundational-training-program"],
               ].map(([label, path]) => (
                 <div
                   key={path}
