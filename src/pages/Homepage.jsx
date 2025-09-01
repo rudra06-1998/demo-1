@@ -59,7 +59,7 @@ const Homepage = () => {
             <img
               src="/assets/Hero Girl Image.png"
               alt="Student"
-              className="max-h-[450px] object-contain z-10 relative"
+              className="max-h-[600px] object-contain z-10 relative"
             />
 
             {/* Badges */}
@@ -71,7 +71,7 @@ const Homepage = () => {
     "
             >
               {/* Award Badge */}
-              <div className="shadow-lg rounded-md px-4 py-3 text-center text-gray-800 flex items-center justify-center max-w-[200px] sm:max-w-[240px]">
+              <div className=" px-4 py-3 text-center text-gray-800 flex items-center justify-center max-w-[200px] sm:max-w-[240px]">
                 <img
                   src="/assets/Achievements.png"
                   alt="Achievements"
@@ -80,7 +80,7 @@ const Homepage = () => {
               </div>
 
               {/* Students Badge */}
-              <div className="text-white shadow-lg lg:mt-[40px] rounded-md px-4 py-3 text-center flex items-center justify-center max-w-[200px] sm:max-w-[240px]">
+              <div className="text-white  lg:mt-[40px]  px-4 py-3 text-center flex items-center justify-center max-w-[200px] sm:max-w-[240px]">
                 <img
                   src="/assets/Trusted Image.png"
                   alt="Trusted Students"

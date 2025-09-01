@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* Logo */}
           <div onClick={() => handleNavigation("/")}
             className="flex-shrink-0 flex items-center space-x-2 cursor-pointer">
-            <img src="/assets/2 2025.png" alt="logo" className="h-12 w-auto" />
+            <img src="/assets/2 2025.png" alt="logo" className="h-14 w-auto" />
           </div>
 
           {/* Desktop Menu */}
