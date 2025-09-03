@@ -32,12 +32,14 @@ export default function Navbar() {
   };
 
   return (
-    <nav ref={navRef} className="bg-white shadow-sm sticky top-0 z-50">
+    <nav ref={navRef} className="bg-white shadow-sm sticky top-0 z-50 lg:p-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <div onClick={() => handleNavigation("/")}
-            className="flex-shrink-0 flex items-center space-x-2 cursor-pointer">
+          <div
+            onClick={() => handleNavigation("/")}
+            className="flex-shrink-0 flex items-center space-x-2 cursor-pointer"
+          >
             <img src="/assets/2 2025.png" alt="logo" className="h-14 w-auto" />
           </div>
 
@@ -85,7 +87,10 @@ export default function Navbar() {
                     ["Hire Palo Alto Engineers", "/hire-palo-alto-engineers"],
                     ["Hire Juniper Engineers", "/hire-juniper-engineers"],
                     ["Hire Programmers", "/hire-programmers"],
-                    ["Hire Chip Design Engineers", "/hire-chip-design-engineers"],
+                    [
+                      "Hire Chip Design Engineers",
+                      "/hire-chip-design-engineers",
+                    ],
                     ["From Certified to Hired", "/from-certified-to-hired"],
                   ].map(([label, path]) => (
                     <div
@@ -110,12 +115,21 @@ export default function Navbar() {
               {openDropdown === "skills" && (
                 <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md py-2">
                   {[
-                    ["Artificial Intelligence Skills", "/artificial-intelligence-skills"],
+                    [
+                      "Artificial Intelligence Skills",
+                      "/artificial-intelligence-skills",
+                    ],
                     ["Software Programming", "/software-programming"],
                     ["Networking Skills", "/networking-skills"],
                     ["Cybersecurity Skills", "/cybersecurity-skills"],
-                    ["Semiconductor Chip Design Skills", "/semiconductor-chips-design-skills"],
-                    ["Foundational Training Programs", "/foundational-training-program"],
+                    [
+                      "Semiconductor Chip Design Skills",
+                      "/semiconductor-chips-design-skills",
+                    ],
+                    [
+                      "Foundational Training Programs",
+                      "/foundational-training-program",
+                    ],
                   ].map(([label, path]) => (
                     <div
                       key={path}
@@ -129,8 +143,6 @@ export default function Navbar() {
               )}
             </div>
 
-
-
             {/* Courses */}
             <div
               onClick={() => handleNavigation("/course")}
@@ -142,7 +154,7 @@ export default function Navbar() {
             {/* Highlight Button */}
             <a
               href="#"
-              className="bg-lime-300 hover:bg-lime-400 text-black px-4 py-2 rounded-md font-medium"
+              className="bg-[#d5f952] hover:bg-[#d5f952] text-black px-4 py-2 rounded-md font-medium"
             >
               Hire Job-Ready Engineers →
             </a>
@@ -214,8 +226,6 @@ export default function Navbar() {
             </div>
           )}
 
-
-
           <button
             onClick={() => toggleDropdown("skills")}
             className="w-full text-left flex items-center justify-between py-2 text-black"
@@ -225,12 +235,21 @@ export default function Navbar() {
           {openDropdown === "skills" && (
             <div className="pl-4 space-y-2">
               {[
-                ["Artificial Intelligence Skills", "/artificial-intelligence-skills"],
+                [
+                  "Artificial Intelligence Skills",
+                  "/artificial-intelligence-skills",
+                ],
                 ["Software Programming", "/software-programming"],
                 ["Networking Skills", "/networking-skills"],
                 ["Cybersecurity Skills", "/cybersecurity-skills"],
-                ["Semiconductor Chip Design Skills", "/semiconductor-chips-design-skills"],
-                ["Foundational Training Programs", "/foundational-training-program"],
+                [
+                  "Semiconductor Chip Design Skills",
+                  "/semiconductor-chips-design-skills",
+                ],
+                [
+                  "Foundational Training Programs",
+                  "/foundational-training-program",
+                ],
               ].map(([label, path]) => (
                 <div
                   key={path}
@@ -243,8 +262,6 @@ export default function Navbar() {
             </div>
           )}
 
-
-
           <div
             onClick={() => handleNavigation("/course")}
             className="block py-2 text-black cursor-pointer hover:underline"
@@ -254,7 +271,7 @@ export default function Navbar() {
 
           <a
             href="#"
-            className="block w-full text-center bg-lime-300 hover:bg-lime-400 text-black px-4 py-2 rounded-md font-medium"
+            className="block w-full text-center bg-[#d5f952] hover:bg-[#d5f952] text-black px-4 py-2 rounded-md font-medium"
           >
             Hire Job-Ready Engineers →
           </a>

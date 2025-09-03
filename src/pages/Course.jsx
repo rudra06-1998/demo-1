@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useState } from "react";
 // import { ChevronDown } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -44,20 +44,20 @@ const ALL_COURSES = Array.from({ length: 12 }, (_, i) => ({
     i % 3 === 0
       ? "/assets/Certified Investment Banking Operations Professional.png"
       : i % 3 === 1
-        ? "/assets/Certified Investment Banking Operations Professional (1).png"
-        : "/assets/Certified Investment Banking Operations Professional (2).png",
+      ? "/assets/Certified Investment Banking Operations Professional (1).png"
+      : "/assets/Certified Investment Banking Operations Professional (2).png",
   category:
     i % 6 === 0
       ? "Generative AI"
       : i % 6 === 1
-        ? "AI & Machine Learning"
-        : i % 6 === 2
-          ? "Project Management"
-          : i % 6 === 3
-            ? "Cyber Security"
-            : i % 6 === 4
-              ? "Cloud Computing & DevOps"
-              : "Most Popular",
+      ? "AI & Machine Learning"
+      : i % 6 === 2
+      ? "Project Management"
+      : i % 6 === 3
+      ? "Cyber Security"
+      : i % 6 === 4
+      ? "Cloud Computing & DevOps"
+      : "Most Popular",
 }));
 
 /** ---------- icons (inline SVG, no extra deps) ---------- */
@@ -72,9 +72,19 @@ const ChevronDown = ({ className = "w-4 h-4" }) => (
 );
 
 const CheckCircle = ({ className = "w-4 h-4" }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className={className}>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    className={className}
+  >
     <circle cx="12" cy="12" r="9" strokeWidth="1.6" />
-    <path d="M8 12l2.5 2.5L16 9" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <path
+      d="M8 12l2.5 2.5L16 9"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
@@ -84,15 +94,12 @@ const ArrowRight = ({ className = "w-4 h-4" }) => (
   </svg>
 );
 
-
-
 const Course = () => {
-
   const [activeCategory, setActiveCategory] = useState("Most Popular");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [page, setPage] = useState(1);
-  const pageSize = 9; 
-  
+  const pageSize = 9;
+
   const router = useRouter();
   // filter (keep static if you don't need it)
   const filtered = useMemo(() => {
@@ -106,12 +113,10 @@ const Course = () => {
 
   const go = (p) => setPage((prev) => Math.min(Math.max(p, 1), totalPages));
 
-
-  const handleClick = (course)=>{
-    console.log("handleClick", course)
-    router.push("/course-details")
-  }
-
+  const handleClick = (course) => {
+    console.log("handleClick", course);
+    router.push("/course-details");
+  };
 
   return (
     <div>
@@ -119,26 +124,33 @@ const Course = () => {
       <div className="bg-white">
         {/* Top Section */}
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center px-6 lg:px-12 py-16 gap-10">
-
           {/* Left Content */}
           <div className="flex-1 text-center lg:text-left">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#333333] leading-snug">
               Unlock Unlimited Live <br /> Classes for Your Workforce
             </h2>
 
             <ul className="mt-6 space-y-3 text-lg text-gray-700">
               <li className="flex items-center justify-center lg:justify-start gap-2">
                 {/* <span className="text-green-600 font-bold">✔</span> */}
-                <img src="/assets/tick.png" alt=""  />
-                <span><span className="font-semibold">700+</span> Live classes monthly</span>
+                <img src="/assets/tick.png" alt="" />
+                <span>
+                  <span className="font-semibold">700+</span> Live classes
+                  monthly
+                </span>
               </li>
               <li className="flex items-center justify-center lg:justify-start gap-2">
-                <img src="/assets/tick.png" alt=""  />
-                <span><span className="font-semibold">550+</span> Learning solutions</span>
+                <img src="/assets/tick.png" alt="" />
+                <span>
+                  <span className="font-semibold">550+</span> Learning solutions
+                </span>
               </li>
               <li className="flex items-center justify-center lg:justify-start gap-2">
-                <img src="/assets/tick.png" alt=""  />
-                <span><span className="font-semibold">100+</span> Hands-on projects with labs</span>
+                <img src="/assets/tick.png" alt="" />
+                <span>
+                  <span className="font-semibold">100+</span> Hands-on projects
+                  with labs
+                </span>
               </li>
             </ul>
           </div>
@@ -161,7 +173,6 @@ const Course = () => {
           <div className="p-4 max-w-12xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6 px-6">
             {logos.map((logo, i) => (
               <div
-
                 key={i}
                 className=" rounded-lg flex items-center justify-center  hover:shadow-md transition"
               >
@@ -182,8 +193,9 @@ const Course = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           {/* Heading */}
           <header className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-              Learn using a <span className="text-gray-900">curriculum</span> built by industry
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#333333]">
+              Learn using a <span className="text-[#333333]">curriculum</span>{" "}
+              built by industry
             </h2>
             <p className="mt-2 text-gray-500">
               Designed to meet market demands and propel your career success
@@ -197,7 +209,11 @@ const Course = () => {
               className="w-full flex items-center justify-between bg-black text-white px-4 py-3 rounded-md"
             >
               <span className="font-medium">{activeCategory}</span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileOpen ? "rotate-180" : ""}`} />
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${
+                  mobileOpen ? "rotate-180" : ""
+                }`}
+              />
             </button>
             {mobileOpen && (
               <ul className="mt-2 border rounded-md bg-white overflow-hidden">
@@ -209,10 +225,11 @@ const Course = () => {
                         setMobileOpen(false);
                         setPage(1);
                       }}
-                      className={`w-full text-left px-4 py-2 text-sm ${activeCategory === c
-                          ? "bg-gray-100 text-gray-900 font-medium"
+                      className={`w-full text-left px-4 py-2 text-sm ${
+                        activeCategory === c
+                          ? "bg-gray-100 text-[#333333] font-medium"
                           : "text-gray-700 hover:bg-gray-50"
-                        }`}
+                      }`}
                     >
                       {c}
                     </button>
@@ -226,7 +243,7 @@ const Course = () => {
           <div className="flex gap-6">
             {/* Sidebar (desktop) */}
             <aside className="hidden lg:block w-64 shrink-0">
-              <div  className=" rounded-xl bg-white overflow-hidden ">
+              <div className=" rounded-xl bg-white overflow-hidden ">
                 {/* <div className="flex items-center justify-between bg-black text-white px-4 py-3">
             <span className="font-medium">Most Popular</span>
             <ChevronDown className="w-4 h-4 opacity-90" />
@@ -235,18 +252,25 @@ const Course = () => {
                 <ul className="py-2">
                   {CATEGORIES.map((c) => (
                     <li key={c}>
-                      <button 
+                      <button
                         onClick={() => {
                           setActiveCategory(c);
                           setPage(1);
-                        }} 
-                        className={`w-full text-left px-4 py-2 text-sm transition ${activeCategory === c
+                        }}
+                        className={`w-full text-left px-4 py-2 text-sm transition ${
+                          activeCategory === c
                             ? "bg-black text-white px-4 py-3 font-medium rounded-md"
                             : "text-gray-700 hover:bg-gray-50"
-                          }`}
-
+                        }`}
                       >
-                        {activeCategory === c ? <div className="flex items-center justify-between "> {c} <ChevronDown className="w-4 h-4 opacity-90" /></div> : c}
+                        {activeCategory === c ? (
+                          <div className="flex items-center justify-between ">
+                            {" "}
+                            {c} <ChevronDown className="w-4 h-4 opacity-90" />
+                          </div>
+                        ) : (
+                          c
+                        )}
                       </button>
                     </li>
                   ))}
@@ -276,7 +300,7 @@ const Course = () => {
 
                     {/* body */}
                     <div className="p-4 md:p-5">
-                      <h3 className="text-[15px] md:text-base font-semibold text-gray-900 leading-snug">
+                      <h3 className="text-[15px] md:text-base font-semibold text-[#333333] leading-snug">
                         {course.title}
                       </h3>
 
@@ -290,7 +314,9 @@ const Course = () => {
                           {course.batches}
                         </li>
                         <li>
-                          <span className="font-semibold text-gray-800">{course.placements}</span>
+                          <span className="font-semibold text-gray-800">
+                            {course.placements}
+                          </span>
                           {/* thin highlight bar */}
                           <div className="mt-1 h-2 rounded-full bg-gray-100 overflow-hidden">
                             <div className="h-2 w-1/3 bg-blue-100" />
@@ -300,15 +326,15 @@ const Course = () => {
 
                       <div className="mt-4 flex items-center gap-3">
                         <button
-                        onClick={()=>handleClick(course)}
+                          onClick={() => handleClick(course)}
                           type="button"
-                          className="flex-1 rounded-full border border-gray-300 bg-white text-gray-900 text-sm font-medium py-2.5 hover:bg-gray-50 cursor-pointer"
+                          className="flex-1 rounded-full border border-gray-300 bg-white text-[#333333] text-sm font-medium py-2.5 hover:bg-gray-50 cursor-pointer"
                         >
                           Apply Now
                         </button>
                         <button
                           type="button"
-                          className="flex-1 rounded-full bg-gray-900 text-white text-sm font-medium py-2.5 hover:bg-black flex items-center justify-center gap-2"
+                          className="flex-1 rounded-full bg-[#333333] text-white text-sm font-medium py-2.5 hover:bg-black flex items-center justify-center gap-2"
                         >
                           Know More <ArrowRight className="w-4 h-4" />
                         </button>
@@ -328,14 +354,18 @@ const Course = () => {
                   Previous
                 </button>
 
-                {Array.from({ length: Math.min(totalPages, 6) }, (_, i) => i + 1).map((n) => (
+                {Array.from(
+                  { length: Math.min(totalPages, 6) },
+                  (_, i) => i + 1
+                ).map((n) => (
                   <button
                     key={n}
                     onClick={() => go(n)}
-                    className={`px-3.5 py-2 rounded-md text-sm border transition ${page === n
+                    className={`px-3.5 py-2 rounded-md text-sm border transition ${
+                      page === n
                         ? "bg-black text-white border-black"
                         : "bg-white text-gray-800 border-gray-300 hover:bg-gray-50"
-                      }`}
+                    }`}
                   >
                     {n}
                   </button>
@@ -366,217 +396,211 @@ const Course = () => {
         </div>
       </section>
 
-
       {/* //2-- */}
 
-     <footer className="bg-black text-gray-300 px-8 py-12">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8">
+      <footer className="bg-black text-gray-300 px-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8">
+          {/* Follow us */}
+          <div className="space-y-4 col-span-1 md:col-span-1">
+            <h3 className="font-semibold">Follow us!</h3>
+            <button className="border border-gray-500 px-4 py-1 rounded hover:bg-[#333333] w-full sm:w-auto">
+              Refer and Earn
+            </button>
+            <div className="flex gap-3 flex-wrap sm:flex gap-5">
+              <img src="/assets/Link.png" />
+              <img src="/assets/Link (1).png" />
+              <img src="/assets/Link (2).png" />
+            </div>
+            <div className="flex gap-3 flex-wrap md:flex gap-5">
+              <img src="/assets/Link (3).png" />
+              <img src="/assets/Link (4).png" />
+              <img src="/assets/Link (5).png" />
+            </div>
+          </div>
 
-  {/* Follow us */}
-  <div className="space-y-4 col-span-1 md:col-span-1">
-    <h3 className="font-semibold">Follow us!</h3>
-    <button className="border border-gray-500 px-4 py-1 rounded hover:bg-gray-800 w-full sm:w-auto">
-      Refer and Earn
-    </button>
-    <div className="flex gap-3 flex-wrap sm:flex gap-5">
-      <img src='/assets/Link.png' />
-      <img src='/assets/Link (1).png' />
-      <img src='/assets/Link (2).png' />
-      
+          {/* Company */}
+          <div className="space-y-2">
+            <h3 className="font-semibold">Company</h3>
+            <ul className="space-y-1">
+              <li>About us</li>
+              <li>Careers</li>
+              <li>Newsroom</li>
+              <li>Alumni speak</li>
+              <li>Grievance redressal</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+
+          {/* Work with us */}
+          <div className="space-y-2">
+            <h3 className="font-semibold">Work with us</h3>
+            <ul className="space-y-1">
+              <li>Become an instructor</li>
+              <li>Blog as guest</li>
+            </ul>
+          </div>
+
+          {/* Discover */}
+          <div className="space-y-2">
+            <h3 className="font-semibold">Discover</h3>
+            <ul className="space-y-1">
+              <li>Free Courses</li>
+              <li>Skillup Sitemap</li>
+              <li>Resources</li>
+              <li>RSS feed</li>
+              <li>SimpliMentor GPT</li>
+            </ul>
+          </div>
+
+          {/* For Businesses */}
+          <div className="space-y-2">
+            <h3 className="font-semibold">For Businesses</h3>
+            <ul className="space-y-1">
+              <li>Corporate training</li>
+              <li>Simplilearn Learning Hub+</li>
+              <li>Guaranteed-to-run Classes</li>
+              <li>Partners</li>
+              <li>Government</li>
+            </ul>
+          </div>
+
+          {/* Learn On the Go */}
+          <div className="space-y-4">
+            <h3 className="font-semibold">Learn On the Go!</h3>
+            <button className="flex items-center gap-2 border border-gray-500 px-3 py-2 rounded hover:bg-[#333333] w-full">
+              <img src="/assets/footer_sprite.svgz fill.png" alt="" />
+              Get the Android App
+            </button>
+            <button className="flex items-center gap-2 border border-gray-500 px-3 py-2 rounded hover:bg-[#333333] w-full">
+              <img src="/assets/footer_sprite.svgz fill (1).png" alt="" />
+              Get the iOS App
+            </button>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <hr className="border-gray-700 my-8" />
+
+        {/* Bottom Section */}
+        <div className="text-sm space-y-3">
+          <h4 className="font-semibold">Trending Post Graduate Programs</h4>
+          <div className="flex flex-wrap gap-2 text-gray-400">
+            <span>PG in Data Science</span> |
+            <span>Cloud Computing and DevOps - IITG</span> |
+            <span>Data Analytics Program</span> |<span>AI and ML Course</span> |
+            <span>Business Analysis Certification Course</span> |
+            <span>Data Engineering Certification Courses</span> |
+            <span>Product Management Training Course</span>
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <h4 className="font-semibold">Trending Master Programs</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400">
+            <span>PMP Plus Certification Training Course</span>
+            <span>Data Science Certification Course</span>
+            <span>Data Analyst Course</span>
+            <span>Masters in Artificial Intelligence</span>
+            <span>Cloud Architect Certification Training Course</span>
+            <span>DevOps Engineer Certification Training Course</span>
+            <span>Cyber Security Expert Course</span>
+            <span>Business Analyst Course</span>
+          </div>
+        </div>
+
+        {/* Trending Courses */}
+        <div className="space-y-3">
+          <h4 className="font-semibold">Trending Courses</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400">
+            <span>PMP Certification Training Course</span>
+            <span>CSM Certification Course</span>
+            <span>Data Science with Python Course</span>
+            <span>AWS Certification</span>
+            <span>CEH Certification</span>
+            <span>AWS Technical Essentials</span>
+            <span>AWS DevOps Certification</span>
+            <span>ITIL Certification</span>
+            <span>AZ 900 Certification</span>
+            <span>CompTIA Security+ Certification</span>
+            <span>AZ 400 Certification</span>
+            <span>SAFe Certification</span>
+            <span>CISSP Certification Training</span>
+            <span>Tableau Certification Course</span>
+            <span>Lean Six Sigma Green Belt Certification</span>
+            <span>Lean Six Sigma Black Belt Certification</span>
+            <span>Power BI Certification Course</span>
+          </div>
+        </div>
+
+        {/* Trending Categories */}
+        <div className="space-y-3">
+          <h4 className="font-semibold">Trending Categories</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400">
+            <span>Project Management Courses</span>
+            <span>Online Certifications</span>
+            <span>Generative AI Courses</span>
+            <span>Digital Marketing Courses</span>
+            <span>Agile Certifications</span>
+            <span>Cloud Computing Courses</span>
+            <span>Cyber Security Courses</span>
+            <span>EC-Council Certifications</span>
+            <span>PeopleCert Certifications</span>
+            <span>Scrum Alliance Certifications</span>
+            <span>Web Development Courses</span>
+            <span>Scaled Agile Certifications</span>
+            <span>Google Cloud Courses</span>
+            <span>ISC2 Certifications</span>
+            <span>AXELOS Certifications</span>
+            <span>ISACA Certifications</span>
+            <span>PMI Certifications</span>
+            <span>CompTIA certifications</span>
+            <span>AWS Courses</span>
+            <span>Microsoft Certifications</span>
+          </div>
+        </div>
+
+        {/* Trending Resources */}
+        <div className="space-y-3">
+          <h4 className="font-semibold">Trending Resources</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400">
+            <span>Python Tutorial</span>
+            <span>JavaScript Tutorial</span>
+            <span>Java Tutorial</span>
+            <span>Angular Tutorial</span>
+            <span>Node.js Tutorial</span>
+            <span>Docker Tutorial</span>
+            <span>Git Tutorial</span>
+            <span>Kubernetes Tutorial</span>
+            <span>Power BI Tutorial</span>
+            <span>CSS Tutorial</span>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <hr className="border-gray-700" />
+
+        {/* Bottom Section */}
+        <div className="text-center text-xs md:text-sm space-y-3 text-gray-400">
+          <div className="flex flex-wrap justify-center gap-3">
+            <a href="#">Terms and Conditions</a>
+            <span>•</span>
+            <a href="#">Privacy Policy</a>
+            <span>•</span>
+            <a href="#">Refund Policy</a>
+          </div>
+          <p>
+            Address: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed eiusmod tempor incididunt ut. Phone No:844-LEARN-00
+            (22-2564-5545)
+          </p>
+          <p>
+            © 2009-2025 – Global Skills. All Rights Reserved. The certification
+            names are the trademarks of their respective owners.
+          </p>
+        </div>
+      </footer>
     </div>
-    <div className="flex gap-3 flex-wrap md:flex gap-5">
-      <img src='/assets/Link (3).png' />
-      <img src='/assets/Link (4).png' />
-      <img src='/assets/Link (5).png' />
-      
-    </div>
-  </div>
+  );
+};
 
-  {/* Company */}
-  <div className="space-y-2">
-    <h3 className="font-semibold">Company</h3>
-    <ul className="space-y-1">
-      <li>About us</li>
-      <li>Careers</li>
-      <li>Newsroom</li>
-      <li>Alumni speak</li>
-      <li>Grievance redressal</li>
-      <li>Contact us</li>
-    </ul>
-  </div>
-
-  {/* Work with us */}
-  <div className="space-y-2">
-    <h3 className="font-semibold">Work with us</h3>
-    <ul className="space-y-1">
-      <li>Become an instructor</li>
-      <li>Blog as guest</li>
-    </ul>
-  </div>
-
-  {/* Discover */}
-  <div className="space-y-2">
-    <h3 className="font-semibold">Discover</h3>
-    <ul className="space-y-1">
-      <li>Free Courses</li>
-      <li>Skillup Sitemap</li>
-      <li>Resources</li>
-      <li>RSS feed</li>
-      <li>SimpliMentor GPT</li>
-    </ul>
-  </div>
-
-  {/* For Businesses */}
-  <div className="space-y-2">
-    <h3 className="font-semibold">For Businesses</h3>
-    <ul className="space-y-1">
-      <li>Corporate training</li>
-      <li>Simplilearn Learning Hub+</li>
-      <li>Guaranteed-to-run Classes</li>
-      <li>Partners</li>
-      <li>Government</li>
-    </ul>
-  </div>
-
-  {/* Learn On the Go */}
-  <div className="space-y-4">
-    <h3 className="font-semibold">Learn On the Go!</h3>
-    <button className="flex items-center gap-2 border border-gray-500 px-3 py-2 rounded hover:bg-gray-800 w-full">
-      <img src="/assets/footer_sprite.svgz fill.png" alt="" /> 
-      Get the Android App
-    </button>
-    <button className="flex items-center gap-2 border border-gray-500 px-3 py-2 rounded hover:bg-gray-800 w-full">
-      <img src="/assets/footer_sprite.svgz fill (1).png" alt="" /> 
-      Get the iOS App
-    </button>
-  </div>
-</div>
-
-
-    {/* Divider */}
-    <hr className="border-gray-700 my-8" />
-
-    {/* Bottom Section */}
-    <div className="text-sm space-y-3">
-      <h4 className="font-semibold">Trending Post Graduate Programs</h4>
-      <div className="flex flex-wrap gap-2 text-gray-400">
-        <span>PG in Data Science</span> |
-        <span>Cloud Computing and DevOps - IITG</span> |
-        <span>Data Analytics Program</span> |
-        <span>AI and ML Course</span> |
-        <span>Business Analysis Certification Course</span> |
-        <span>Data Engineering Certification Courses</span> |
-        <span>Product Management Training Course</span>
-      </div>
-    </div>
-
-    
-      <div className="space-y-3">
-      <h4 className="font-semibold">Trending Master Programs</h4>
-      <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400">
-        <span>PMP Plus Certification Training Course</span>
-        <span>Data Science Certification Course</span>
-        <span>Data Analyst Course</span>
-        <span>Masters in Artificial Intelligence</span>
-        <span>Cloud Architect Certification Training Course</span>
-        <span>DevOps Engineer Certification Training Course</span>
-        <span>Cyber Security Expert Course</span>
-        <span>Business Analyst Course</span>
-      </div>
-    </div>
-
-    {/* Trending Courses */}
-    <div className="space-y-3">
-      <h4 className="font-semibold">Trending Courses</h4>
-      <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400">
-        <span>PMP Certification Training Course</span>
-        <span>CSM Certification Course</span>
-        <span>Data Science with Python Course</span>
-        <span>AWS Certification</span>
-        <span>CEH Certification</span>
-        <span>AWS Technical Essentials</span>
-        <span>AWS DevOps Certification</span>
-        <span>ITIL Certification</span>
-        <span>AZ 900 Certification</span>
-        <span>CompTIA Security+ Certification</span>
-        <span>AZ 400 Certification</span>
-        <span>SAFe Certification</span>
-        <span>CISSP Certification Training</span>
-        <span>Tableau Certification Course</span>
-        <span>Lean Six Sigma Green Belt Certification</span>
-        <span>Lean Six Sigma Black Belt Certification</span>
-        <span>Power BI Certification Course</span>
-      </div>
-    </div>
-
-    {/* Trending Categories */}
-    <div className="space-y-3">
-      <h4 className="font-semibold">Trending Categories</h4>
-      <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400">
-        <span>Project Management Courses</span>
-        <span>Online Certifications</span>
-        <span>Generative AI Courses</span>
-        <span>Digital Marketing Courses</span>
-        <span>Agile Certifications</span>
-        <span>Cloud Computing Courses</span>
-        <span>Cyber Security Courses</span>
-        <span>EC-Council Certifications</span>
-        <span>PeopleCert Certifications</span>
-        <span>Scrum Alliance Certifications</span>
-        <span>Web Development Courses</span>
-        <span>Scaled Agile Certifications</span>
-        <span>Google Cloud Courses</span>
-        <span>ISC2 Certifications</span>
-        <span>AXELOS Certifications</span>
-        <span>ISACA Certifications</span>
-        <span>PMI Certifications</span>
-        <span>CompTIA certifications</span>
-        <span>AWS Courses</span>
-        <span>Microsoft Certifications</span>
-      </div>
-    </div>
-
-    {/* Trending Resources */}
-    <div className="space-y-3">
-      <h4 className="font-semibold">Trending Resources</h4>
-      <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400">
-        <span>Python Tutorial</span>
-        <span>JavaScript Tutorial</span>
-        <span>Java Tutorial</span>
-        <span>Angular Tutorial</span>
-        <span>Node.js Tutorial</span>
-        <span>Docker Tutorial</span>
-        <span>Git Tutorial</span>
-        <span>Kubernetes Tutorial</span>
-        <span>Power BI Tutorial</span>
-        <span>CSS Tutorial</span>
-      </div>
-    </div>
-
-    {/* Divider */}
-    <hr className="border-gray-700" />
-
-    {/* Bottom Section */}
-    <div className="text-center text-xs md:text-sm space-y-3 text-gray-400">
-      <div className="flex flex-wrap justify-center gap-3">
-        <a href="#">Terms and Conditions</a>
-        <span>•</span>
-        <a href="#">Privacy Policy</a>
-        <span>•</span>
-        <a href="#">Refund Policy</a>
-      </div>
-      <p>
-        Address: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-        eiusmod tempor incididunt ut. Phone No:844-LEARN-00 (22-2564-5545)
-      </p>
-      <p>
-        © 2009-2025 – Global Skills. All Rights Reserved. The certification
-        names are the trademarks of their respective owners.
-      </p>
-    </div>
-  </footer>
-    </div>
-  )
-}
-
-export default Course
+export default Course;

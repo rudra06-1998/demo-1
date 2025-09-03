@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -106,7 +106,6 @@ const faqs = {
   ],
 };
 
-
 const CourseDetails = () => {
   const [openIndex, setOpenIndex] = useState(0);
   const scrollRef = useRef(null);
@@ -157,10 +156,9 @@ const CourseDetails = () => {
     <div>
       <section className="bg-[#f3f7fc] py-12 px-6 lg:px-20">
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10">
-
           {/* Left Content */}
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl lg:text-5xl font-bold text-[#333333] leading-tight">
               Generative AI <br /> for Managers
             </h1>
             <p className="mt-4 font-semibold text-lg text-gray-800">
@@ -177,7 +175,7 @@ const CourseDetails = () => {
                 <img src="/assets/clock.svg.png" alt="img" />
 
                 <span>
-                  <strong className='text-black'>4 Months</strong>
+                  <strong className="text-black">4 Months</strong>
                   <br />
                   <span className="text-sm text-gray-600">Duration</span>
                 </span>
@@ -187,7 +185,7 @@ const CourseDetails = () => {
                 <img src="/assets/Frequency.png" alt="img" />
 
                 <span>
-                  <strong className='text-black'>Weekend Sessions</strong>
+                  <strong className="text-black">Weekend Sessions</strong>
                   <br />
                   <span className="text-sm text-gray-600">Frequency</span>
                 </span>
@@ -196,7 +194,7 @@ const CourseDetails = () => {
                 {/* <span className="text-gray-500">💻</span> */}
                 <img src="/assets/Contai.png" alt="img" />
                 <span>
-                  <strong className='text-black'>Live Online Training</strong>
+                  <strong className="text-black">Live Online Training</strong>
                   <br />
                   <span className="text-sm text-gray-600">Session type</span>
                 </span>
@@ -208,14 +206,14 @@ const CourseDetails = () => {
               <button className="px-8 py-3 text-black rounded-full border-2 border-gray-900 font-medium hover:bg-gray-100">
                 Download Brochure
               </button>
-              <button className="px-8 py-3 rounded-full bg-gray-900 text-white font-medium hover:bg-gray-800 flex items-center gap-2">
+              <button className="px-8 py-3 rounded-full bg-[#333333] text-white font-medium hover:bg-[#333333] flex items-center gap-2">
                 Apply Now →
               </button>
             </div>
           </div>
 
           {/* Right Image */}
-          <div className="flex-1 flex justify-center" >
+          <div className="flex-1 flex justify-center">
             <div className=" h-72  sm:h-96  overflow-hidden ">
               <img
                 src="/assets/bg-image.png"
@@ -235,7 +233,6 @@ const CourseDetails = () => {
         <div className="p-4 max-w-12xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6 px-6">
           {logos.map((logo, i) => (
             <div
-
               key={i}
               className=" rounded-lg flex items-center justify-center  hover:shadow-md transition"
             >
@@ -266,8 +263,8 @@ const CourseDetails = () => {
             Level Up Your Problem-Solving Skills: 4P Approach
           </h2>
           <p className="text-base sm:text-lg max-w-3xl mx-auto mb-12">
-            This approach enables you to address real-world business challenges by
-            utilizing battle-tested approaches from industry leaders and
+            This approach enables you to address real-world business challenges
+            by utilizing battle-tested approaches from industry leaders and
             practitioners.
           </p>
 
@@ -282,9 +279,9 @@ const CourseDetails = () => {
                 Learn from Industry Practitioners
               </h3>
               <p className="text-sm leading-relaxed text-gray-200">
-                Learn proven methodologies from seasoned industry practitioners and
-                PwC&apos;s Experts and understand how industry leaders approach complex
-                problems.
+                Learn proven methodologies from seasoned industry practitioners
+                and PwC&apos;s Experts and understand how industry leaders
+                approach complex problems.
               </p>
             </div>
 
@@ -298,8 +295,8 @@ const CourseDetails = () => {
               </h3>
               <p className="text-sm leading-relaxed text-gray-200">
                 Analyze functional case studies across finance, marketing, and
-                operations. Apply effective problem-solving techniques to various
-                scenarios and build practical experience.
+                operations. Apply effective problem-solving techniques to
+                various scenarios and build practical experience.
               </p>
             </div>
 
@@ -313,8 +310,8 @@ const CourseDetails = () => {
               </h3>
               <p className="text-sm leading-relaxed text-gray-200">
                 Conquer complex business challenges with the power of AI. Build
-                confidence and competence to tackle similar issues in your career,
-                leveraging cutting-edge technology to stay ahead.
+                confidence and competence to tackle similar issues in your
+                career, leveraging cutting-edge technology to stay ahead.
               </p>
             </div>
 
@@ -327,41 +324,43 @@ const CourseDetails = () => {
                 Apply and Create Impact
               </h3>
               <p className="text-sm leading-relaxed text-gray-200">
-                Create compelling presentations, pitch decks, or even approaches to
-                convey your strategic solutions effectively.
+                Create compelling presentations, pitch decks, or even approaches
+                to convey your strategic solutions effectively.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-
       {/* 3rd */}
       {/* 4th */}
       <section className="relative py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-
           {/* Centered Heading */}
           <h2 className="text-center text-2xl text-black sm:text-3xl md:text-4xl font-bold leading-snug mb-10">
-            Introducing Generative AI for Managers<br />
+            Introducing Generative AI for Managers
+            <br />
             in Association with PwC Academy
           </h2>
 
           {/* Two Column Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
             {/* Left Paragraph */}
             <div>
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed text-left">
-                The Generative AI for Managers program, in association with PwC Academy,
-                enables participants to harness the transformative power of Generative AI (GenAI)
-                within their organizations. This 4-month program features a cutting-edge curriculum
-                structured into four modules, progressing from foundational GenAI concepts to real-world
-                industry applications. Participants will acquire the knowledge necessary to grasp
-                GenAI&apos;s industry-wide impact and identify practical implementations within their teams.
-                Through hands-on project experience, they will cultivate the skills required to bring
-                their GenAI visions to fruition while simultaneously exploring the future of GenAI,
-                ensuring preparedness for responsible development and emerging technologies.
+                The Generative AI for Managers program, in association with PwC
+                Academy, enables participants to harness the transformative
+                power of Generative AI (GenAI) within their organizations. This
+                4-month program features a cutting-edge curriculum structured
+                into four modules, progressing from foundational GenAI concepts
+                to real-world industry applications. Participants will acquire
+                the knowledge necessary to grasp GenAI&apos;s industry-wide
+                impact and identify practical implementations within their
+                teams. Through hands-on project experience, they will cultivate
+                the skills required to bring their GenAI visions to fruition
+                while simultaneously exploring the future of GenAI, ensuring
+                preparedness for responsible development and emerging
+                technologies.
               </p>
             </div>
 
@@ -383,58 +382,90 @@ const CourseDetails = () => {
         style={{ backgroundImage: "url('/assets/bgimage88.png')" }} // 👈 replace with your image
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-
           {/* Card 1 */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg text-white">
-            <img src="/assets/Taught by Experts and PwC Practitioners.png" alt="PwC" className="h-10 mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Taught by Experts and PwC Practitioners</h3>
+            <img
+              src="/assets/Taught by Experts and PwC Practitioners.png"
+              alt="PwC"
+              className="h-10 mb-4"
+            />
+            <h3 className="text-lg font-semibold mb-2">
+              Taught by Experts and PwC Practitioners
+            </h3>
             <p className="text-sm leading-relaxed">
-              Led by seasoned professionals from PwC and other top industry experts,
-              this program combines academic rigor with real-world insights,
-              offering a holistic understanding of Generative AI.
+              Led by seasoned professionals from PwC and other top industry
+              experts, this program combines academic rigor with real-world
+              insights, offering a holistic understanding of Generative AI.
             </p>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg text-white">
-            <img src="/assets/Generative AI Applications across Functions.png" alt="GenAI" className="h-10 mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Generative AI Applications across Functions</h3>
+            <img
+              src="/assets/Generative AI Applications across Functions.png"
+              alt="GenAI"
+              className="h-10 mb-4"
+            />
+            <h3 className="text-lg font-semibold mb-2">
+              Generative AI Applications across Functions
+            </h3>
             <p className="text-sm leading-relaxed">
-              Tap into the potential of Generative AI with our comprehensive program
-              that will equip you with the practical knowledge and skills to implement it effectively.
+              Tap into the potential of Generative AI with our comprehensive
+              program that will equip you with the practical knowledge and
+              skills to implement it effectively.
             </p>
           </div>
 
           {/* Card 3 */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg text-white">
-            <img src="/assets/Taught by Experts and PwC Practitioners.png" alt="PwC" className="h-10 mb-4" />
+            <img
+              src="/assets/Taught by Experts and PwC Practitioners.png"
+              alt="PwC"
+              className="h-10 mb-4"
+            />
 
-            <h3 className="text-lg font-semibold mb-2">Strategic Problem Solving</h3>
+            <h3 className="text-lg font-semibold mb-2">
+              Strategic Problem Solving
+            </h3>
             <p className="text-sm leading-relaxed">
-              Tackle real-world business problems under the guidance of
-              Industry leaders and PwC Academy&apos;s Practitioners.
-              Master their proven strategies for dissecting and conquering complex challenges.
+              Tackle real-world business problems under the guidance of Industry
+              leaders and PwC Academy&apos;s Practitioners. Master their proven
+              strategies for dissecting and conquering complex challenges.
             </p>
           </div>
 
           {/* Card 4 */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg text-white">
-            <img src="/assets/d1008c44ef6a44b47c74e4f01795055d3521e317.png" alt="LinkedIn" className="h-10 mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Access to LinkedIn Learning & iimjobs/hirist</h3>
+            <img
+              src="/assets/d1008c44ef6a44b47c74e4f01795055d3521e317.png"
+              alt="LinkedIn"
+              className="h-10 mb-4"
+            />
+            <h3 className="text-lg font-semibold mb-2">
+              Access to LinkedIn Learning & iimjobs/hirist
+            </h3>
             <p className="text-sm leading-relaxed">
-              Unlock your potential with 6 months of LinkedIn Learning and 6 months of iimJobs.
-              Gain in-demand GenAI skills and access exclusive job opportunities to accelerate your career.
+              Unlock your potential with 6 months of LinkedIn Learning and 6
+              months of iimJobs. Gain in-demand GenAI skills and access
+              exclusive job opportunities to accelerate your career.
             </p>
           </div>
 
           {/* Card 5 */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg text-white">
-            <img src="/assets/Taught by Experts and PwC Practitioners.png" alt="PwC" className="h-10 mb-4" />
+            <img
+              src="/assets/Taught by Experts and PwC Practitioners.png"
+              alt="PwC"
+              className="h-10 mb-4"
+            />
 
-            <h3 className="text-lg font-semibold mb-2">Prestigious Certification from World-renowned PwC</h3>
+            <h3 className="text-lg font-semibold mb-2">
+              Prestigious Certification from World-renowned PwC
+            </h3>
             <p className="text-sm leading-relaxed">
-              Validate your expertise in Generative AI with highly reputed PwC certification.
-              Advance your career by acquiring in-depth knowledge and proficiency in GenAI skills.
+              Validate your expertise in Generative AI with highly reputed PwC
+              certification. Advance your career by acquiring in-depth knowledge
+              and proficiency in GenAI skills.
             </p>
           </div>
         </div>
@@ -444,38 +475,52 @@ const CourseDetails = () => {
       <section className="px-6 py-16 bg-white">
         <div className="max-w-7xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">
             Why should you join the <br />
-            <span className="text-[#1a2541]">Generative AI for Managers Program?</span>
+            <span className="text-[#1a2541]">
+              Generative AI for Managers Program?
+            </span>
           </h2>
 
           {/* Cards */}
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-gray-100 rounded-lg p-6 text-left shadow-sm">
-              <h3 className="font-semibold text-gray-900 mb-2">Fuel growth and innovation</h3>
+              <h3 className="font-semibold text-[#333333] mb-2">
+                Fuel growth and innovation
+              </h3>
               <p className="text-gray-600 text-sm">
-                Learn how GenAI can revolutionize your industry and generate new revenue streams.
+                Learn how GenAI can revolutionize your industry and generate new
+                revenue streams.
               </p>
             </div>
 
             <div className="bg-gray-100 rounded-lg p-6 text-left shadow-sm">
-              <h3 className="font-semibold text-gray-900 mb-2">Improve operational efficiency</h3>
+              <h3 className="font-semibold text-[#333333] mb-2">
+                Improve operational efficiency
+              </h3>
               <p className="text-gray-600 text-sm">
-                Streamline processes, reduce costs, and boost productivity with Gen AI-powered solutions.
+                Streamline processes, reduce costs, and boost productivity with
+                Gen AI-powered solutions.
               </p>
             </div>
 
             <div className="bg-gray-100 rounded-lg p-6 text-left shadow-sm">
-              <h3 className="font-semibold text-gray-900 mb-2">Harness data for better decisions</h3>
+              <h3 className="font-semibold text-[#333333] mb-2">
+                Harness data for better decisions
+              </h3>
               <p className="text-gray-600 text-sm">
-                Utilize GenAI to extract valuable insights from your data to inform strategic choices.
+                Utilize GenAI to extract valuable insights from your data to
+                inform strategic choices.
               </p>
             </div>
 
             <div className="bg-gray-100 rounded-lg p-6 text-left shadow-sm">
-              <h3 className="font-semibold text-gray-900 mb-2">Gain a competitive edge</h3>
+              <h3 className="font-semibold text-[#333333] mb-2">
+                Gain a competitive edge
+              </h3>
               <p className="text-gray-600 text-sm">
-                Understand the future of GenAI and position your organization for long-term success.
+                Understand the future of GenAI and position your organization
+                for long-term success.
               </p>
             </div>
           </div>
@@ -483,12 +528,17 @@ const CourseDetails = () => {
           {/* Market Info */}
           <div className="mt-16 text-gray-700 text-lg italic max-w-4xl mx-auto">
             The global AI market is projected to reach{" "}
-            <span className="font-bold not-italic">118.06 billion by 2032</span>,{" "}
+            <span className="font-bold not-italic">118.06 billion by 2032</span>
+            ,{" "}
             <span className="italic">
-              growing at a CAGR of <span className="font-bold not-italic">27.02%</span> during the
-              forecast period 2023 to 2032, driving significant demand for skilled AI professionals
+              growing at a CAGR of{" "}
+              <span className="font-bold not-italic">27.02%</span> during the
+              forecast period 2023 to 2032, driving significant demand for
+              skilled AI professionals
             </span>
-            <div className="mt-2 text-right text-sm text-gray-500">(We Forum)</div>
+            <div className="mt-2 text-right text-sm text-gray-500">
+              (We Forum)
+            </div>
           </div>
 
           {/* CTA Button */}
@@ -520,8 +570,9 @@ const CourseDetails = () => {
                   onClick={() =>
                     setOpenIndex(openIndex === index ? null : index)
                   }
-                  className={`w-full flex justify-between items-center px-4 py-4 text-left font-semibold text-gray-800 bg-gray-50 ${openIndex === index ? "bg-gray-100" : ""
-                    }`}
+                  className={`w-full flex justify-between items-center px-4 py-4 text-left font-semibold text-gray-800 bg-gray-50 ${
+                    openIndex === index ? "bg-gray-100" : ""
+                  }`}
                 >
                   <div className="flex items-center gap-2">
                     <img src="/assets/award_star4.svg fill.png" alt="" />
@@ -636,7 +687,7 @@ const CourseDetails = () => {
 
         {/* Button */}
         <div className="mt-12">
-          <button className="bg-white text-gray-900 font-medium px-6 sm:px-10 py-3 rounded-full shadow-md hover:bg-gray-100 transition flex items-center gap-2 mx-auto">
+          <button className="bg-white text-[#333333] font-medium px-6 sm:px-10 py-3 rounded-full shadow-md hover:bg-gray-100 transition flex items-center gap-2 mx-auto">
             Enrol Now →
           </button>
         </div>
@@ -676,11 +727,11 @@ const CourseDetails = () => {
 
               <p>
                 Based on our extensive know-how, we seek to deliver unique
-                learning experiences that are stimulating, engaging and valuable,
-                and which continue to have an impact long beyond the completion of
-                the course. Through PwC Academy, our aim is to create a vibrant
-                community of expert professionals well-versed in their respective
-                areas.
+                learning experiences that are stimulating, engaging and
+                valuable, and which continue to have an impact long beyond the
+                completion of the course. Through PwC Academy, our aim is to
+                create a vibrant community of expert professionals well-versed
+                in their respective areas.
               </p>
             </div>
           </div>
@@ -713,14 +764,15 @@ const CourseDetails = () => {
               <div>
                 <p className="text-sm md:text-base leading-relaxed mb-4">
                   Sounak has over 11 years of professional experience working
-                  across industries like Energy, Retail, Telecom and Pharma. He is
-                  an experienced practitioner with a demonstrated history of
+                  across industries like Energy, Retail, Telecom and Pharma. He
+                  is an experienced practitioner with a demonstrated history of
                   working in digital solution conceptualization and incubation.
                   <br />
                   <br />
                   Sounak has worked extensively in the analysis, identification
-                  and incubation of new solutions leveraging digital technologies
-                  like AI/ Gen AI, metaverse, computer vision and edge computing.
+                  and incubation of new solutions leveraging digital
+                  technologies like AI/ Gen AI, metaverse, computer vision and
+                  edge computing.
                 </p>
 
                 <h3 className="font-semibold">Sounak Sarkar</h3>
@@ -743,12 +795,12 @@ const CourseDetails = () => {
               {/* Text */}
               <div>
                 <p className="text-sm md:text-base leading-relaxed mb-4">
-                  Dr. Yasha has a career spanning 15+ years dedicated to her role
-                  within PwC practice. Throughout her tenure, she has led projects
-                  across multiple industries including pharma, life sciences and
-                  manufacturing. Notably, she has successfully navigated complex
-                  engagements, collaborating with multi-disciplinary teams and
-                  clients worldwide.
+                  Dr. Yasha has a career spanning 15+ years dedicated to her
+                  role within PwC practice. Throughout her tenure, she has led
+                  projects across multiple industries including pharma, life
+                  sciences and manufacturing. Notably, she has successfully
+                  navigated complex engagements, collaborating with
+                  multi-disciplinary teams and clients worldwide.
                 </p>
 
                 <h3 className="font-semibold">Dr. Yasha Pandit</h3>
@@ -762,7 +814,7 @@ const CourseDetails = () => {
 
           {/* Button */}
           <div className="mt-12">
-            <button className="bg-white text-gray-900 px-8 py-3 rounded-full font-medium shadow-md hover:bg-gray-100 transition flex items-center gap-2 mx-auto">
+            <button className="bg-white text-[#333333] px-8 py-3 rounded-full font-medium shadow-md hover:bg-gray-100 transition flex items-center gap-2 mx-auto">
               Enrol Now →
             </button>
           </div>
@@ -774,26 +826,33 @@ const CourseDetails = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-snug">
-              Achieve <span className="text-[#1d1f2f]">PwC Certification</span> <br />
+            <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6 leading-snug">
+              Achieve <span className="text-[#1d1f2f]">PwC Certification</span>{" "}
+              <br />
               on Successful Completion
             </h2>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Upon successful completion of this program, you will earn a Certificate in
-              Generative AI for Managers, jointly awarded by Imarticus Learning and PwC.
-              This certification will significantly help in enhancing your professional profile.
+              Upon successful completion of this program, you will earn a
+              Certificate in Generative AI for Managers, jointly awarded by
+              Imarticus Learning and PwC. This certification will significantly
+              help in enhancing your professional profile.
             </p>
 
-            <p className="text-gray-700 mb-4">To qualify for this certification, you must meet the following requirements:</p>
+            <p className="text-gray-700 mb-4">
+              To qualify for this certification, you must meet the following
+              requirements:
+            </p>
 
             <ul className="space-y-3 text-gray-700">
               <li>
-                <span className="font-semibold">✦ Academic Performance:</span> Achieve a minimum average score of 50% in all
-                graded assessments.
+                <span className="font-semibold">✦ Academic Performance:</span>{" "}
+                Achieve a minimum average score of 50% in all graded
+                assessments.
               </li>
               <li>
-                <span className="font-semibold">✦ Attendance:</span> Maintain a minimum attendance of 80% for each module.
+                <span className="font-semibold">✦ Attendance:</span> Maintain a
+                minimum attendance of 80% for each module.
               </li>
             </ul>
           </div>
@@ -815,7 +874,7 @@ const CourseDetails = () => {
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
             <span className="text-green-700">Who Can Benefit</span>{" "}
-            <span className="text-gray-900">from this Program?</span>
+            <span className="text-[#333333]">from this Program?</span>
           </h2>
 
           {/* Cards Grid */}
@@ -831,7 +890,7 @@ const CourseDetails = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-5">
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                  <h3 className="font-semibold text-lg text-[#333333] mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-600 text-sm">{item.desc}</p>
@@ -857,8 +916,9 @@ const CourseDetails = () => {
 
         {/* Enrollment Steps Section */}
         <div className="bg-white py-16 px-6 max-w-6xl mx-auto text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-12 text-gray-900">
-            Enroll in this program by following <span className="font-bold">these steps</span>
+          <h3 className="text-2xl md:text-3xl font-bold mb-12 text-[#333333]">
+            Enroll in this program by following{" "}
+            <span className="font-bold">these steps</span>
           </h3>
 
           {/* Steps */}
@@ -875,7 +935,9 @@ const CourseDetails = () => {
 
                 {/* Step Info */}
                 <div className="text-left">
-                  <h4 className="font-bold text-sm text-[#1A2238] uppercase">{step.title}</h4>
+                  <h4 className="font-bold text-sm text-[#1A2238] uppercase">
+                    {step.title}
+                  </h4>
                   <p className="text-gray-600 text-sm">{step.desc}</p>
                 </div>
               </div>
@@ -895,7 +957,7 @@ const CourseDetails = () => {
       <section className="w-full bg-gray-50 py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#333333]">
             Programme <span className="text-[#1A2238]">Fees</span>
           </h2>
           <p className="text-gray-600 mt-3 text-base md:text-lg">
@@ -915,10 +977,10 @@ const CourseDetails = () => {
             <div className="bg-white rounded-xl shadow-md w-full lg:w-1/2">
               {/* Tabs */}
               <div className="flex border-b">
-                <button className="w-1/2 py-3 text-sm md:text-base font-semibold text-gray-900 border-b-2 border-[#1A2238]">
+                <button className="w-1/2 py-3 text-sm md:text-base font-semibold text-[#333333] border-b-2 border-[#1A2238]">
                   Installments
                 </button>
-                <button className="w-1/2 py-3 text-sm md:text-base text-gray-500 hover:text-gray-900">
+                <button className="w-1/2 py-3 text-sm md:text-base text-gray-500 hover:text-[#333333]">
                   EMI Options
                 </button>
               </div>
@@ -956,19 +1018,21 @@ const CourseDetails = () => {
           {/* Sidebar */}
           <aside className="border-r lg:pr-6 flex lg:flex-col gap-4 text-gray-700">
             <button
-              className={`flex items-center justify-between w-full py-3 px-4 rounded-md text-left font-medium ${activeTab === "about"
-                ? "bg-gray-100 text-gray-900"
-                : "hover:bg-gray-50"
-                }`}
+              className={`flex items-center justify-between w-full py-3 px-4 rounded-md text-left font-medium ${
+                activeTab === "about"
+                  ? "bg-gray-100 text-[#333333]"
+                  : "hover:bg-gray-50"
+              }`}
               onClick={() => setActiveTab("about")}
             >
               About the Program <ChevronRight size={18} />
             </button>
             <button
-              className={`flex items-center justify-between w-full py-3 px-4 rounded-md text-left font-medium ${activeTab === "enrollment"
-                ? "bg-gray-100 text-gray-900"
-                : "hover:bg-gray-50"
-                }`}
+              className={`flex items-center justify-between w-full py-3 px-4 rounded-md text-left font-medium ${
+                activeTab === "enrollment"
+                  ? "bg-gray-100 text-[#333333]"
+                  : "hover:bg-gray-50"
+              }`}
               onClick={() => setActiveTab("enrollment")}
             >
               Enrollment, Fees, and Benefits <ChevronRight size={18} />
@@ -977,7 +1041,7 @@ const CourseDetails = () => {
 
           {/* FAQs */}
           <div className="lg:col-span-3">
-            <h2 className="text-3xl font-bold text-center lg:text-left text-gray-900">
+            <h2 className="text-3xl font-bold text-center lg:text-left text-[#333333]">
               Frequently Asked <span className="text-[#1A2238]">Questions</span>
             </h2>
             <p className="text-gray-500 mt-2 text-center lg:text-left">
@@ -988,7 +1052,7 @@ const CourseDetails = () => {
               {faqs[activeTab].map((item, idx) => (
                 <div key={idx} className="py-4">
                   <button
-                    className="flex w-full items-center justify-between text-left text-gray-900 font-medium"
+                    className="flex w-full items-center justify-between text-left text-[#333333] font-medium"
                     onClick={() => setOpenFAQ(openFAQ === idx ? -1 : idx)}
                   >
                     {item.q}
@@ -1009,24 +1073,21 @@ const CourseDetails = () => {
 
       <footer className="bg-black text-gray-300 px-8 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8">
-
           {/* Follow us */}
           <div className="space-y-4 col-span-1 md:col-span-1">
             <h3 className="font-semibold">Follow us!</h3>
-            <button className="border border-gray-500 px-4 py-1 rounded hover:bg-gray-800 w-full sm:w-auto">
+            <button className="border border-gray-500 px-4 py-1 rounded hover:bg-[#333333] w-full sm:w-auto">
               Refer and Earn
             </button>
             <div className="flex gap-3 flex-wrap sm:flex gap-5">
-              <img src='/assets/Link.png' />
-              <img src='/assets/Link (1).png' />
-              <img src='/assets/Link (2).png' />
-
+              <img src="/assets/Link.png" />
+              <img src="/assets/Link (1).png" />
+              <img src="/assets/Link (2).png" />
             </div>
             <div className="flex gap-3 flex-wrap md:flex gap-5">
-              <img src='/assets/Link (3).png' />
-              <img src='/assets/Link (4).png' />
-              <img src='/assets/Link (5).png' />
-
+              <img src="/assets/Link (3).png" />
+              <img src="/assets/Link (4).png" />
+              <img src="/assets/Link (5).png" />
             </div>
           </div>
 
@@ -1079,17 +1140,16 @@ const CourseDetails = () => {
           {/* Learn On the Go */}
           <div className="space-y-4">
             <h3 className="font-semibold">Learn On the Go!</h3>
-            <button className="flex items-center gap-2 border border-gray-500 px-3 py-2 rounded hover:bg-gray-800 w-full">
+            <button className="flex items-center gap-2 border border-gray-500 px-3 py-2 rounded hover:bg-[#333333] w-full">
               <img src="/assets/footer_sprite.svgz fill.png" alt="" />
               Get the Android App
             </button>
-            <button className="flex items-center gap-2 border border-gray-500 px-3 py-2 rounded hover:bg-gray-800 w-full">
+            <button className="flex items-center gap-2 border border-gray-500 px-3 py-2 rounded hover:bg-[#333333] w-full">
               <img src="/assets/footer_sprite.svgz fill (1).png" alt="" />
               Get the iOS App
             </button>
           </div>
         </div>
-
 
         {/* Divider */}
         <hr className="border-gray-700 my-8" />
@@ -1100,14 +1160,12 @@ const CourseDetails = () => {
           <div className="flex flex-wrap gap-2 text-gray-400">
             <span>PG in Data Science</span> |
             <span>Cloud Computing and DevOps - IITG</span> |
-            <span>Data Analytics Program</span> |
-            <span>AI and ML Course</span> |
+            <span>Data Analytics Program</span> |<span>AI and ML Course</span> |
             <span>Business Analysis Certification Course</span> |
             <span>Data Engineering Certification Courses</span> |
             <span>Product Management Training Course</span>
           </div>
         </div>
-
 
         <div className="space-y-3">
           <h4 className="font-semibold">Trending Master Programs</h4>
@@ -1204,8 +1262,9 @@ const CourseDetails = () => {
             <a href="#">Refund Policy</a>
           </div>
           <p>
-            Address: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            eiusmod tempor incididunt ut. Phone No:844-LEARN-00 (22-2564-5545)
+            Address: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed eiusmod tempor incididunt ut. Phone No:844-LEARN-00
+            (22-2564-5545)
           </p>
           <p>
             © 2009-2025 – Global Skills. All Rights Reserved. The certification
@@ -1214,7 +1273,7 @@ const CourseDetails = () => {
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default CourseDetails
+export default CourseDetails;
