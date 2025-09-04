@@ -49,7 +49,7 @@ export default function Navbar() {
             <div className="relative ">
               <button
                 onClick={() => toggleDropdown("insights")}
-                className="flex items-center hover:text-gray-700 text-black cursor-pointer "
+                className="flex items-center font-bold  hover:text-gray-700 text-black cursor-pointer "
               >
                 Insights <ChevronDown size={16} className="ml-1" />
               </button>
@@ -75,9 +75,9 @@ export default function Navbar() {
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("employers")}
-                className="flex items-center hover:text-gray-700 text-black cursor-pointer"
+                className="flex items-center hover:text-gray-700 font-bold  text-black cursor-pointer"
               >
-                Employers <ChevronDown size={16} className="ml-1" />
+                Employers <ChevronDown size={16} className="ml-1 " />
               </button>
               {openDropdown === "employers" && (
                 <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md py-2">
@@ -108,12 +108,12 @@ export default function Navbar() {
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("skills")}
-                className="flex items-center hover:text-gray-700 text-black cursor-pointer"
+                className="flex items-center hover:text-gray-700 text-black  font-sans font-bold  cursor-pointer"
               >
                 Skills Training <ChevronDown size={16} className="ml-1" />
               </button>
               {openDropdown === "skills" && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md py-2">
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white  shadow-lg rounded-md py-2">
                   {[
                     [
                       "Artificial Intelligence Skills",
@@ -146,7 +146,7 @@ export default function Navbar() {
             {/* Courses */}
             <div
               onClick={() => handleNavigation("/course")}
-              className="hover:text-gray-700 text-black cursor-pointer"
+              className="hover:text-gray-700 text-black font-bold  cursor-pointer"
             >
               Courses
             </div>
@@ -154,9 +154,9 @@ export default function Navbar() {
             {/* Highlight Button */}
             <a
               href="#"
-              className="bg-[#d5f952] hover:bg-[#d5f952] text-black px-4 py-2 rounded-md font-medium"
+              className="bg-[#d5f952] hover:bg-[#d5f952] text-black px-4 py-2 rounded-md font-bold"
             >
-              Hire Job-Ready Engineers →
+              Start Your Tech Career →
             </a>
           </div>
 
@@ -273,7 +273,7 @@ export default function Navbar() {
             href="#"
             className="block w-full text-center bg-[#d5f952] hover:bg-[#d5f952] text-black px-4 py-2 rounded-md font-medium"
           >
-            Hire Job-Ready Engineers →
+            Start Your Tech Career →
           </a>
         </div>
       )}
