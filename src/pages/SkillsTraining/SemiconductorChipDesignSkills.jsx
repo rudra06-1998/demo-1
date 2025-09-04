@@ -71,7 +71,7 @@ const SemiconductorChipDesignSkills = () => {
       </section>
 
       <section className="w-full bg-white py-16">
-        <div className="w-full md:max-w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
+        <div className="w-full md:max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
           {/* Left Content */}
           <div>
             <h1 className="text-3xl md:text-5xl font-bold text-[#333333] leading-tight">
@@ -110,11 +110,11 @@ const SemiconductorChipDesignSkills = () => {
         </div>
       </section>
 
-      <section className="bg-[#333333] text-white py-16 px-6">
+      <section className="bg-[#333333] text-white py-20 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="bg-[#333333] p-8 rounded-xl shadow-lg">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <div style={{border:"solid 1px white"}} className="bg-[#333333] p-12 rounded-xl shadow-lg">
+            <h2 className="text-3xl md:text-6xl font-bold mb-6">
               Why Most Chip Design Training Misses the Mark
             </h2>
 
@@ -154,7 +154,7 @@ const SemiconductorChipDesignSkills = () => {
         </div>
       </section>
 
-      <section className="w-full px-4 py-12 text-center">
+      <section className="w-full px-4 py-18 text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#333333]">
           Chip Design Skills Built for Fab Environments
         </h2>
@@ -173,7 +173,7 @@ const SemiconductorChipDesignSkills = () => {
 
           {/* Right Side - Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Silicon-Ready Talent
             </h2>
 
@@ -198,7 +198,7 @@ const SemiconductorChipDesignSkills = () => {
 
             <p className="text-gray-300 mb-6">
               Our engineers are joining design teams across VLSI, embedded
-              systems, and silicon labs.{" "}
+              systems{" "}, and silicon labs.{" "}
             </p>
           </div>
         </div>
@@ -244,17 +244,21 @@ const SemiconductorChipDesignSkills = () => {
         </div>
       </section>
 
-      {/* half green screen created by me */}
+     
+
+
+  {/* sl */}
       <section className="relative w-full">
-        <div className="bg-[#d5f952] relative max-w-6xl flex flex-col md:flex-row p-6 mx-auto w-full items-center md:items-start gap-6 rounded-lg">
+        <div className="bg-[#d5f952] relative max-w-6xl flex flex-col md:flex-row p-8 md:p-12 mx-auto w-full items-center md:items-start gap-6 rounded-lg min-h-[300px] md:min-h-[300px]">
           {/* Left Side */}
           <div className="w-full md:w-2/3 text-center md:text-left">
             <h2 className="text-2xl md:text-4xl font-bold text-black leading-snug">
               Train for Silicon. Deliver for Scale.
             </h2>
+            <div className="h-[2px] w-32 bg-black mt-3 mb-5"></div>
 
-            <p className="text-black">
-              Whether you’re entering chip design or scaling a silicon team,
+            <p className="text-black mt-4">
+               Whether you’re entering chip design or scaling a silicon team,
               Global Skills delivers engineers who are fab-ready.
             </p>
           </div>
@@ -262,10 +266,9 @@ const SemiconductorChipDesignSkills = () => {
           {/* Right Side Buttons */}
           <div className="w-full md:w-1/3 flex flex-col items-center md:items-start gap-4 mt-6 md:mt-0">
             <button className="bg-black text-[#d5f952] font-semibold px-6 py-4 rounded-md flex items-center gap-2 hover:bg-[#333333] transition w-full md:w-auto justify-center md:justify-start">
-              Join The Chip Design Track
+               Join The Chip Design Track
               <span className="text-xl">→</span>
             </button>
-
             <button className="bg-black text-[#d5f952] font-semibold px-6 py-4 rounded-md flex items-center gap-2 hover:bg-[#333333] transition w-full md:w-auto justify-center md:justify-start">
               Hire Chip Design Engineers
               <span className="text-xl">→</span>
@@ -273,6 +276,16 @@ const SemiconductorChipDesignSkills = () => {
           </div>
         </div>
       </section>
+      {/* sl */}
+
+
+
+
+
+
+
+
+
 
       <footer className="bg-[#2b2b2b] text-gray-200 py-12">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">

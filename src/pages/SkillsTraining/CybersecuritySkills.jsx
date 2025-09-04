@@ -113,7 +113,10 @@ const CybersecuritySkills = () => {
       <section className="bg-[#333333] text-white py-16 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div style={{border:"solid 1px white"}} className="bg-[#333333] p-8 rounded-xl shadow-lg">
+          <div
+            style={{ border: "solid 1px white" }}
+            className="bg-[#333333] p-8 rounded-xl shadow-lg"
+          >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Where Most Cyber Training Falls Short
             </h2>
@@ -242,21 +245,18 @@ const CybersecuritySkills = () => {
         </div>
       </section>
 
-     
-
-
- {/* sl */}
+      {/* sl */}
       <section className="relative w-full">
         <div className="bg-[#d5f952] relative max-w-6xl flex flex-col md:flex-row p-8 md:p-12 mx-auto w-full items-center md:items-start gap-6 rounded-lg min-h-[300px] md:min-h-[300px]">
           {/* Left Side */}
           <div className="w-full md:w-2/3 text-center md:text-left">
             <h2 className="text-2xl md:text-4xl font-bold text-black leading-snug">
-             Train to Defend. Deploy with Confidence.
+              Train to Defend. Deploy with Confidence.
             </h2>
             <div className="h-[2px] w-32 bg-black mt-3 mb-5"></div>
 
             <p className="text-black mt-4">
-               Whether you're entering the security field or expanding your team,
+              Whether you're entering the security field or expanding your team,
               Global Skills brings real-world readiness.
             </p>
           </div>
@@ -268,43 +268,13 @@ const CybersecuritySkills = () => {
               <span className="text-xl">→</span>
             </button>
             <button className="bg-black text-[#d5f952] font-semibold px-6 py-4 rounded-md flex items-center gap-2 hover:bg-[#333333] transition w-full md:w-auto justify-center md:justify-start">
-               Hire Cyber Security Engineers
+              Hire Cyber Security Engineers
               <span className="text-xl">→</span>
             </button>
           </div>
         </div>
       </section>
       {/* sl */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <footer className="bg-[#2b2b2b] text-gray-200 py-12">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">

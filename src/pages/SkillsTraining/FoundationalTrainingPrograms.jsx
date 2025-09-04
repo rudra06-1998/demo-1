@@ -39,7 +39,7 @@ const FoundationalTrainingPrograms = () => {
   }, []);
   return (
     <div className="bg-white">
-      <section className="relative w-full h-56 md:h-78 flex items-center justify-center">
+      <section className="relative w-full h-60 md:h-78 flex items-center justify-center">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -58,7 +58,7 @@ const FoundationalTrainingPrograms = () => {
       </section>
 
       <section className="w-full bg-white py-16">
-        <div className="w-full md:max-w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
+        <div className="w-full md:max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
           {/* Left Content */}
           <div>
             <h1 className="text-3xl md:text-5xl font-bold text-[#333333] leading-tight">
@@ -90,13 +90,14 @@ const FoundationalTrainingPrograms = () => {
       </section>
 
       <section className="bg-black text-white py-16 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left Side Image */}
           <div className="rounded-2xl overflow-hidden">
             <img
               src="/assets/imgi_17_16287.jpg" // replace with your image path
               alt="Classroom Training"
-              className="w-full h-full object-cover"
+                            className="w-full rounded-xl shadow-md object-cover aspect-[3/4] md:aspect-[4/5]"
+
             />
           </div>
 
@@ -133,29 +134,36 @@ const FoundationalTrainingPrograms = () => {
         </div>
       </section>
 
-      <div className="relative w-full bg-[#d5f952] bg-cover bg-center bg-no-repeat py-16 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {stats.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white/90 backdrop-blur-sm rounded-xl shadow-md p-8 flex flex-col items-center text-center"
-            >
-              {/* Icon */}
-              <div className="bg-[#d5f952] rounded-full p-2 mb-4">
-                <Check className="text-black w-5 h-5" />
-              </div>
-
-              {/* Number */}
-              <h3 className="text-3xl font-bold text-[#333333]">
-                {item.number}
-              </h3>
-
-              {/* Text */}
-              <p className="text-gray-700 mt-2">{item.text}</p>
+          <div
+            style={{
+              backgroundImage: "url('/assets/Green.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            className="relative w-full py-12 px-6"
+          >
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {stats.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center"
+                >
+                  {/* Icon */}
+                  <div className="bg-[#d5f952] rounded-full p-2 mb-4">
+                    <Check className="text-black w-5 h-5" />
+                  </div>
+    
+                  {/* Number */}
+                  <h3 className="text-3xl font-bold text-[#333333]">
+                    {item.number}
+                  </h3>
+    
+                  {/* Text */}
+                  <p className="text-gray-700 mt-2">{item.text}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
 
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
