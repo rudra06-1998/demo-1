@@ -32,24 +32,28 @@ export default function Navbar() {
   };
 
   return (
-    <nav ref={navRef} className="bg-white shadow-sm sticky top-0 z-50 lg:p-3">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav ref={navRef} className="bg-white shadow-sm sticky top-0 z-50 lg:p-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div
             onClick={() => handleNavigation("/")}
             className="flex-shrink-0 flex items-center space-x-2 cursor-pointer"
           >
-            <img src="/assets/2 2025.png" alt="logo" className="h-14 w-auto" />
+            <img
+              src="/assets/imgi_41_Global-Skill-Logo.png"
+              alt="logo"
+              className="h-17 w-auto"
+            />
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6 items-center">
+          <div className="hidden md:flex space-x-8 items-center w-[70%] ">
             {/* Insights Dropdown */}
             <div className="relative ">
               <button
                 onClick={() => toggleDropdown("insights")}
-                className="flex items-center font-bold  hover:text-gray-700 text-black cursor-pointer "
+                className="flex items-center font-bold text-[18px]  hover:text-gray-700 text-black cursor-pointer "
               >
                 Insights <ChevronDown size={16} className="ml-1" />
               </button>
@@ -75,7 +79,7 @@ export default function Navbar() {
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("employers")}
-                className="flex items-center hover:text-gray-700 font-bold  text-black cursor-pointer"
+                className="flex items-center hover:text-gray-700 text-[18px] font-bold  text-black cursor-pointer"
               >
                 Employers <ChevronDown size={16} className="ml-1 " />
               </button>
@@ -105,10 +109,10 @@ export default function Navbar() {
               )}
             </div>
             {/* Skills Training Dropdown */}
-            <div className="relative">
+            <div className="relative w-[20%]">
               <button
                 onClick={() => toggleDropdown("skills")}
-                className="flex items-center hover:text-gray-700 text-black  font-sans font-bold  cursor-pointer"
+                className="flex items-center hover:text-gray-700 text-black text-[18px]  font-sans font-bold  cursor-pointer"
               >
                 Skills Training <ChevronDown size={16} className="ml-1" />
               </button>
@@ -146,18 +150,22 @@ export default function Navbar() {
             {/* Courses */}
             <div
               onClick={() => handleNavigation("/course")}
-              className="hover:text-gray-700 text-black font-bold  cursor-pointer"
+              className="hover:text-gray-700 text-black font-bold text-[18px]  cursor-pointer"
             >
               Courses
             </div>
 
             {/* Highlight Button */}
-            <a
-              href="#"
-              className="bg-[#d5f952] hover:bg-[#d5f952] text-black px-4 py-2 rounded-md font-bold"
-            >
-              Start Your Tech Career →
-            </a>
+           <a
+  href="#"
+  className="bg-[#d5f952] hover:bg-black text-[#333333] hover:text-white 
+             flex items-center justify-center gap-2
+             pl-[20px] py-4 rounded-lg w-[30%] font-bold "
+>
+  <span>Start Your Tech Career</span>
+  <img src="/assets/icon.svg" alt="icon" className=" font-[#33333] w-5 h-5" />
+</a>
+
           </div>
 
           {/* Mobile Button */}
