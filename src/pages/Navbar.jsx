@@ -48,7 +48,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center w-[70%] ">
+          <div  className="hidden md:flex space-x-7 items-center w-[65%]  ">
             {/* Insights Dropdown */}
             <div className="relative ">
               <button
@@ -109,7 +109,7 @@ export default function Navbar() {
               )}
             </div>
             {/* Skills Training Dropdown */}
-            <div className="relative w-[20%]">
+            <div className="relative w-[18%]">
               <button
                 onClick={() => toggleDropdown("skills")}
                 className="flex items-center hover:text-gray-700 text-black text-[18px]  font-sans font-bold  cursor-pointer"
@@ -156,16 +156,19 @@ export default function Navbar() {
             </div>
 
             {/* Highlight Button */}
-           <a
-  href="#"
-  className="bg-[#d5f952] hover:bg-black text-[#333333] hover:text-white 
+            <a
+              href="#"
+              className="bg-[#d5f952] hover:bg-black text-[#333333] hover:text-white 
              flex items-center justify-center gap-2
              pl-[20px] py-4 rounded-lg w-[30%] font-bold "
->
-  <span>Start Your Tech Career</span>
-  <img src="/assets/icon.svg" alt="icon" className=" font-[#33333] w-5 h-5" />
-</a>
-
+            >
+              <span>Start Your Tech Career</span>
+              <img
+                src="/assets/icon.svg"
+                alt="icon"
+                className=" font-[#33333]  w-5 h-4"
+              />
+            </a>
           </div>
 
           {/* Mobile Button */}
