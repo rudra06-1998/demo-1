@@ -9,9 +9,6 @@ import {
   FaInstagram,
 } from "react-icons/fa6";
 
-
-
-
 const logos = [
   "/assets/imgi_4_c7a9764c-611b-480a-90ac-b570304e09ae.png",
   "/assets/imgi_5_a3046e12-1eca-4986-85da-315d619ba61b.jpg",
@@ -340,96 +337,137 @@ const Homepage = () => {
 
       {/* Training. Certification. */}
 
-   <section className="bg-[#0d0c0f] py-24">
-  <div className="max-w-7xl mx-auto px-6 text-center">
-    {/* Heading */}
-    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-      What We Do?
-    </h2>
-    <p className="text-gray-300 mb-16 text-lg max-w-3xl mx-auto leading-relaxed">
-      Training. Certification. Placement. All in one powerful system.
-    </p>
-
-    {/* Cards Grid */}
-    <div className="grid gap-10 md:grid-cols-3">
-      {/* Card 1 */}
-      <div className="flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden h-full">
-        <img
-          src="/assets/789822-1024x683.webp"
-          alt="For Employers"
-          className="block w-full h-72 object-cover"
-        />
-        <div className="p-8 flex flex-col flex-1 text-left">
-          <h3 className="text-3xl font-bold mb-4 text-black">For Employers</h3>
-          <p className="text-gray-600 mb-6 flex-1 leading-relaxed text-base">
-            <span className="font-semibold">
-              Hire Certified Engineers. Ready from Day One.
-            </span><br/><br/>
-            Every engineer is trained through official vendor programs, vetted
-            by experts, and deployed with confidence. No ramp-up. No guesswork.
+      <section className="bg-[#0d0c0f] py-24">
+        <div className="max-w-7xl mx-auto px-6 text-center ">
+          {/* Heading */}
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            What We Do?
+          </h2>
+          <p className="text-gray-300 mb-16 text-lg max-w-3xl mx-auto leading-relaxed">
+            Training. Certification. Placement. All in one powerful system.
           </p>
-          <button className="mt-auto bg-[#d5f952] text-black font-bold py-4 px-6 rounded-xl hover:bg-lime-300 transition text-base">
-            Hire Ready Engineer →
-          </button>
+
+          {/* Cards Grid */}
+          <div className="grid gap-10 md:grid-cols-3 ">
+            {/* Card 1 */}
+
+            <div className="bg-white p-3">
+            <div className="flex flex-col bg-white  shadow-xl overflow-hidden h-full">
+              <div className="relative">
+                <img
+                  src="/assets/789822-1024x683.webp"
+                  alt="For Employers"
+                  className="block w-full h-72 object-cover"
+                />
+                {/* Icon */}
+                <div className="absolute -bottom-8 left-8 bg-white shadow-lg rounded-xl p-6">
+                  <img
+                    src="/assets/qqw.webp"
+                    alt="Employer Icon"
+                    className="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div className="p-8 pt-12 flex flex-col flex-1 text-left">
+                <h3 className="text-3xl font-bold mb-4 text-black">
+                  For Employers
+                </h3>
+                <p className="text-gray-600 mb-6 flex-1 leading-relaxed text-base">
+                  <span className="font-semibold">
+                    Hire Certified Engineers. Ready from Day One.
+                  </span>
+                  <br />
+                  <br />
+                  Every engineer is trained through official vendor programs,
+                  vetted by experts, and deployed with confidence. No ramp-up.
+                  No guesswork.
+                </p>
+                <button className="mt-auto bg-[#d5f952] text-black font-bold py-4 px-6 rounded-xl hover:bg-black hover:text-white transition text-base">
+                  Hire Ready Engineer →
+                </button>
+              </div>
+            </div></div>
+
+            {/* Card 2 */}
+             <div className="bg-white p-3">
+            <div className="flex flex-col bg-white shadow-xl overflow-hidden h-full">
+              <div className="relative">
+                <img
+                  src="/assets/101882.webp"
+                  alt="For Engineers"
+                  className="block w-full h-72 object-cover"
+                />
+                {/* Icon */}
+                <div className="absolute -bottom-8 left-8 bg-white shadow-lg rounded-xl p-6">
+                  <img
+                    src="/assets/qq(2).webp"
+                    alt="Engineer Icon"
+                    className="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div className="p-8 pt-12 flex flex-col flex-1 text-left">
+                <h3 className="text-3xl font-bold mb-4 text-black">
+                  For Engineers
+                </h3>
+                <p className="text-gray-600 mb-6 flex-1 leading-relaxed text-base">
+                  <span className="font-semibold">
+                    Learn. Certify. Get placed. Grow.
+                  </span>
+                  <br />
+                  <br />
+                  We deliver licensed training from global tech vendors — Palo
+                  Alto, Juniper, and more. Certified instructors. Real lab
+                  experience. Direct career pathways.
+                </p>
+                <button className="mt-auto bg-[#d5f952] text-black font-bold py-4 px-6 rounded-xl hover:bg-black hover:text-white transition text-base">
+                  Placement Support For <br /> Engineers →
+                </button>
+              </div>
+            </div></div>
+
+            {/* Card 3 */}  <div className="bg-white p-3">
+            <div className="flex flex-col bg-white  shadow-xl overflow-hidden h-full relative">
+              {/* Coming Soon Badge */}
+              <div className="absolute top-6 right-6 bg-[#d5f952] text-black px-4 py-2 rounded-lg font-bold text-sm shadow">
+                Coming Soon
+              </div>
+              <div className="relative">
+                <img
+                  src="/assets/16287.webp"
+                  alt="For Future Engineers"
+                  className="block w-full h-72 object-cover"
+                />
+                {/* Icon */}
+                <div className="absolute -bottom-8 left-8 bg-white shadow-lg rounded-xl p-6">
+                  <img
+                    src="/assets/ll.webp"
+                    alt="Future Icon"
+                    className="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div className="p-8 pt-12 flex flex-col flex-1 text-left">
+                <h3 className="text-3xl font-bold mb-4 text-black">
+                  For Future Engineers
+                </h3>
+                <p className="text-gray-600 mb-6 flex-1 leading-relaxed text-base">
+                  Not all freshers are ready for high-stakes certifications.
+                  That’s why we’re creating vendor-neutral, industry-aligned
+                  training in networking, security, and IT infrastructure
+                  fundamentals — built to prepare you before certification.
+                </p>
+                <button className="mt-auto bg-[#d5f952] text-black font-bold py-4 px-6 rounded-xl hover:bg-black hover:text-white transition text-base">
+                  Foundational Training <br/> Programs →
+                </button>
+              </div>
+            </div></div>
+          </div>
         </div>
-      </div>
-
-      {/* Card 2 */}
-      <div className="flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden h-full">
-        <img
-          src="/assets/101882.webp"
-          alt="For Engineers"
-          className="block w-full h-72 object-cover"
-        />
-        <div className="p-8 flex flex-col flex-1 text-left">
-          <h3 className="text-3xl font-bold mb-4 text-black">For Engineers</h3>
-          <p className="text-gray-600 mb-6 flex-1 leading-relaxed text-base">
-            <span className="font-semibold">Learn. Certify. Get placed. Grow.</span><br/><br/>
-            We deliver licensed training from global tech vendors — Palo Alto,
-            Juniper, and more. Certified instructors. Real lab experience. Direct
-            career pathways.
-          </p>
-          <button className="mt-auto bg-[#d5f952] text-black font-bold py-4 px-6 rounded-xl hover:bg-lime-300 transition text-base">
-            Placement Support For Engineers →
-          </button>
-        </div>
-      </div>
-
-      {/* Card 3 */}
-      <div className="flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden h-full relative">
-        {/* Coming Soon Badge */}
-        <div className="absolute top-6 right-6 bg-[#d5f952] text-black px-4 py-2 rounded-lg font-bold text-sm shadow">
-          Coming Soon
-        </div>
-
-        <img
-          src="/assets/16287.webp"
-          alt="For Future Engineers"
-          className="block w-full h-72 object-cover"
-        />
-        <div className="p-8 flex flex-col flex-1 text-left">
-          <h3 className="text-3xl font-bold mb-4 text-black">For Future Engineers</h3>
-          <br/>
-          <p className="text-gray-600 mb-6 flex-1 leading-relaxed text-base">
-            Not all freshers are ready for high-stakes certifications. That’s why
-            we’re creating vendor-neutral, industry-aligned training in networking,
-            security, and IT infrastructure fundamentals — built to prepare you
-            before certification.
-          </p>
-          <button className="mt-auto bg-[#d5f952] text-black font-bold py-4 px-6 rounded-xl hover:bg-lime-300 transition text-base">
-            Foundational Training Programs →
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+      </section>
 
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-10 items-center ">
           {/* Left Auto Scrolling Logos (60% on large screens) */}
           <div
             ref={scrollRef}
@@ -469,7 +507,7 @@ const Homepage = () => {
               powers Global Skills.
             </p>
 
-            <button className="mt-6 bg-[#d5f952] hover:bg-[#d5f952]  text-[#333333] font-medium px-6 py-3 rounded-md shadow-md transition">
+            <button className="mt-6 bg-[#d5f952] hover:bg-[#d5f952]  text-[#333333] hover:bg-black hover:text-white font-medium px-6 py-3 rounded-md shadow-md transition">
               <p className=" font-bold"> See How We Train Enterprise Teams →</p>
             </button>
           </div>
@@ -607,7 +645,7 @@ const Homepage = () => {
               the classroom to the command line.
             </p>
 
-            <button className="bg-[#d5f952] text-black font-semibold px-6 py-4 rounded-lg shadow hover:bg-lime-300 transition ">
+            <button className="bg-[#d5f952] text-black font-semibold px-6 py-4 rounded-lg shadow hover:bg-black hover:text-white transition ">
               Get In Touch →
             </button>
           </div>
@@ -689,176 +727,174 @@ const Homepage = () => {
       </section>
 
       {/* half green screen created by me */}
-     <section className="relative w-full px-4 sm:px-6 lg:px-8 py-12">
-  <div className="bg-[#d5f952] relative max-w-6xl mx-auto rounded-lg flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 p-6 md:p-10">
-    
-    {/* Left Side */}
-    <div className="w-full md:w-2/3 text-center md:text-left">
-      <p className="text-black text-lg md:text-xl font-medium mb-2">
-        Let’s Build What’s Next Together
-      </p>
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black leading-snug">
-        Whether you're an engineer looking to break into AI or an employer
-        who needs AI talent that’s ready to deploy, Global Skills gets you
-        there.
-      </h2>
-    </div>
+      <section className="relative w-full px-4 sm:px-6 lg:px-8 py-12">
+        <div className="bg-[#d5f952] relative max-w-6xl mx-auto rounded-lg flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 p-6 md:p-10">
+          {/* Left Side */}
+          <div className="w-full md:w-2/3 text-center md:text-left">
+            <p className="text-black text-lg md:text-xl font-medium mb-2">
+              Let’s Build What’s Next Together
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black leading-snug">
+              Whether you're an engineer looking to break into AI or an employer
+              who needs AI talent that’s ready to deploy, Global Skills gets you
+              there.
+            </h2>
+          </div>
 
-    {/* Right Side Buttons */}
-    <div className="w-full md:w-1/3 flex flex-col items-center md:items-start gap-4">
-      <p className="text-black text-lg md:text-2xl text-center md:text-left font-medium md:w-[90%]">
-        Training that counts. Talent that delivers. Careers that grow.
-      </p>
+          {/* Right Side Buttons */}
+          <div className="w-full md:w-1/3 flex flex-col items-center md:items-start gap-4">
+            <p className="text-black text-lg md:text-2xl text-center md:text-left font-medium md:w-[90%]">
+              Training that counts. Talent that delivers. Careers that grow.
+            </p>
 
-      <div className="flex flex-col gap-3 w-full">
-        <button className="bg-black text-[#d5f952] font-semibold px-6 py-4 rounded-md flex items-center justify-center md:justify-start gap-2 hover:bg-[#333333] transition w-full md:w-auto">
-          Hire Job-Ready Engineers
-          <span className="text-xl">→</span>
-        </button>
+            <div className="flex flex-col gap-3 w-full">
+              <button className="bg-black text-[#d5f952] font-semibold px-6 py-4 rounded-md flex items-center justify-center md:justify-start gap-2  transition w-full md:w-auto">
+                Hire Job-Ready Engineers
+                <span className="text-xl">→</span>
+              </button>
 
-        <button className="bg-black text-[#d5f952] font-semibold px-6 py-4 rounded-md flex items-center justify-center md:justify-start gap-2 hover:bg-[#333333] transition w-full md:w-auto">
-          Start Your Tech Career
-          <span className="text-xl">→</span>
-        </button>
+              <button className="bg-black text-[#d5f952] font-semibold px-6 py-4 rounded-md flex items-center justify-center md:justify-start gap-2  transition w-full md:w-auto">
+                Start Your Tech Career
+                <span className="text-xl">→</span>
+              </button>
 
-        <button className="bg-black text-[#d5f952] font-semibold px-6 py-4 rounded-md flex items-center justify-center md:justify-start gap-2 hover:bg-[#333333] transition w-full md:w-auto">
-          I'm Exploring My Options
-          <span className="text-xl">→</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
+              <button className="bg-black text-[#d5f952] font-semibold px-6 py-4 rounded-md flex items-center justify-center md:justify-start gap-2  transition w-full md:w-auto">
+                I'm Exploring My Options
+                <span className="text-xl">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* footer */}
 
-       <footer className="bg-[#333333] text-gray-200 py-12 md:p-20">
-              <div  className="max-w-9xl  mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10  ">
-                {/* Column 1: Logo + Text */}
-                <div className="">
-                  <h2 className="text-2xl font-bold text-white flex items-center gap-2">
-                    <img src="/assets/whitelogo.png" alt="img" />
-                  </h2>
-                  <p className="mt-4 md:text-1xl leading-relaxed text-gray-300 max-w-xs">
-                    Global Skills was founded to close the gap between certification
-                    and contribution. Too often, engineers graduate with credentials
-                    but lack real-world readiness.
-                  </p>
-                  <button className="mt-6 bg-[#d5f952] text-black font-semibold px-5 py-3 rounded-md flex items-center gap-2 hover:bg-[#d5f952] transition">
-                    Start Your Tech Career →
-                  </button>
-                </div>
-      
-                {/* Column 2: Employers */}
-                <div className="">
-                  <h3 className="text-lg font-semibold text-white mb-3">Employers</h3>
-                  <div className="h-[2px] w-14 bg-[#d5f952] mb-4"></div>
-                  <ul className="space-y-2 text-gray-300 md:text-1xl">
-                    <li>Hire Certified Engineers</li>
-                    <li>Hire AI Engineers</li>
-                    <li>Hire Palo Alto Engineers</li>
-                    <li>Hire Juniper Engineers</li>
-                    <li>Hire Programmers</li>
-                    <li>Hire Semiconductor Chip Design Engineers</li>
-                  </ul>
-                </div>
-      
-                {/* Column 3: Skills Training */}
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-3">
-                    Skills Training
-                  </h3>
-                  <div className="h-[2px] w-14 bg-[#d5f952] mb-4"></div>
-                  <ul className="space-y-2 text-gray-300  md:text-1xl">
-                    <li>Artificial Intelligence Skills</li>
-                    <li>Software Programming</li>
-                    <li>Networking Skills</li>
-                    <li>Cybersecurity Skills</li>
-                    <li>Semiconductor Chip Design Skills</li>
-                  </ul>
-                </div>
-      
-                {/* Column 4: Contact Info */}
-                <div className="bg-[#d5f952] text-black p-12 rounded-md ">
-                  <h3 className="text-lg font-bold mb-3">Contact Info</h3>
-                  <div className="h-[2px] w-14 bg-black mb-4"></div>
-                  <ul className="space-y-3 text-sm">
-                    <li className="flex items-center gap-2">
-                      <img
-                        src="/assets/file/download (4).svg"
-                        className="w-4 h-4"
-                        alt="phone"
-                      />{" "}
-                      hello@globalskills.net
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <img
-                        src="/assets/file/download (3).svg"
-                        className="w-4 h-4"
-                        alt="phone"
-                      />{" "}
-                      The Platina, Gachibowli, Hyderabad, INDIA
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <img
-                        src="/assets/file/download (3).svg"
-                        className="w-4 h-4"
-                        alt="phone"
-                      />{" "}
-                      3800 N Lamar Blvd, Austin, Texas, USA
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <img
-                        src="/assets/file/download (2).svg"
-                        className="w-4 h-4"
-                        alt="phone"
-                      />
-                      1800-8892-877
-                    </li>
-                  </ul>
-      
-                  {/* Social Icons */}
-                  <div className="flex items-center gap-3 mt-6">
-                    <a
-                      href="#"
-                      className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
-                    >
-                      <FaFacebookF />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
-                    >
-                      <FaXTwitter />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
-                    >
-                      <FaLinkedinIn />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
-                    >
-                      <FaYoutube />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
-                    >
-                      <FaInstagram />
-                    </a>
-                  </div>
-                </div>
-              </div>
-      
-              {/* Bottom Copyright */}
-              <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
-                Copyright 2025. All Rights Reserved.
-              </div>
-            </footer>
+      <footer className="bg-[#333333] text-gray-200 py-12 md:p-20">
+        <div className="max-w-9xl  mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10  ">
+          {/* Column 1: Logo + Text */}
+          <div className="">
+            <h2 className="text-2xl font-bold text-white flex items-center gap-2">
+              <img src="/assets/whitelogo.png" alt="img" />
+            </h2>
+            <p className="mt-4 md:text-1xl leading-relaxed text-gray-300 max-w-xs">
+              Global Skills was founded to close the gap between certification
+              and contribution. Too often, engineers graduate with credentials
+              but lack real-world readiness.
+            </p>
+            <button className="mt-6 bg-[#d5f952] text-black font-semibold px-5 py-3 rounded-md flex items-center gap-2 hover:bg-[#d5f952] transition">
+              Start Your Tech Career →
+            </button>
+          </div>
+
+          {/* Column 2: Employers */}
+          <div className="">
+            <h3 className="text-lg font-semibold text-white mb-3">Employers</h3>
+            <div className="h-[2px] w-14 bg-[#d5f952] mb-4"></div>
+            <ul className="space-y-2 text-gray-300 md:text-1xl">
+              <li>Hire Certified Engineers</li>
+              <li>Hire AI Engineers</li>
+              <li>Hire Palo Alto Engineers</li>
+              <li>Hire Juniper Engineers</li>
+              <li>Hire Programmers</li>
+              <li>Hire Semiconductor Chip Design Engineers</li>
+            </ul>
+          </div>
+
+          {/* Column 3: Skills Training */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-3">
+              Skills Training
+            </h3>
+            <div className="h-[2px] w-14 bg-[#d5f952] mb-4"></div>
+            <ul className="space-y-2 text-gray-300  md:text-1xl">
+              <li>Artificial Intelligence Skills</li>
+              <li>Software Programming</li>
+              <li>Networking Skills</li>
+              <li>Cybersecurity Skills</li>
+              <li>Semiconductor Chip Design Skills</li>
+            </ul>
+          </div>
+
+          {/* Column 4: Contact Info */}
+          <div className="bg-[#d5f952] text-black p-12 rounded-md ">
+            <h3 className="text-lg font-bold mb-3">Contact Info</h3>
+            <div className="h-[2px] w-14 bg-black mb-4"></div>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-center gap-2">
+                <img
+                  src="/assets/file/download (4).svg"
+                  className="w-4 h-4"
+                  alt="phone"
+                />{" "}
+                hello@globalskills.net
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/assets/file/download (3).svg"
+                  className="w-4 h-4"
+                  alt="phone"
+                />{" "}
+                The Platina, Gachibowli, Hyderabad, INDIA
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/assets/file/download (3).svg"
+                  className="w-4 h-4"
+                  alt="phone"
+                />{" "}
+                3800 N Lamar Blvd, Austin, Texas, USA
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/assets/file/download (2).svg"
+                  className="w-4 h-4"
+                  alt="phone"
+                />
+                1800-8892-877
+              </li>
+            </ul>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-3 mt-6">
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
+              >
+                <FaXTwitter />
+              </a>
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#333333]"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Copyright */}
+        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+          Copyright 2025. All Rights Reserved.
+        </div>
+      </footer>
     </div>
   );
 };
